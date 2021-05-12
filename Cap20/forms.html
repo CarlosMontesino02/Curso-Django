@@ -1,0 +1,9 @@
+<!-- <h1>Hola mundo</h1> -->
+{{ titulo }} <br/>
+{{ request.user }} <br/>
+<hr/>
+<br/>
+<form method="POST" action="">{% csrf_token %}
+{{ el_form.as_p }}
+<input type="submit" value="Registrame">
+</form>
